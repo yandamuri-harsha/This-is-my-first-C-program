@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int i,n,count=0,a[10];
+    printf("enter the n value");
+    scanf("%d",&n);
+    printf("enter the input values\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+         if(a[i]>=10)
+    {
+    count=count+1;
+    }
+    }
+    printf("%d",count);
+    
+    return 0;
+}
+Output:
+enter the n value4
+enter the input values
+12
+15
+10
+8
+3
