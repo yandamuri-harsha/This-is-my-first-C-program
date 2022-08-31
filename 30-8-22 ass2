@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+char str1[20];
+int i;
+clrscr();
+printf("enter the string sentence:");
+gets(str1);
+printf("the original string is:);
+puts(str1);
+i=0;
+while(str1[i]!='\0')
+{
+if(str1[i]=='a')
+str1[i]=str1[i]-32;
+i++;
+}
+printf("after converting the uppercase string:");
+puts(str1);
+}
