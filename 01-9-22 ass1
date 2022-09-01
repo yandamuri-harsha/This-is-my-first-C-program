@@ -1,0 +1,23 @@
+#include <stdio.h>
+int even(int);
+int main() 
+{
+   int num;
+   printf("enter the number::");
+   scanf("%d",&num);
+    even(num);
+    return 0;
+}
+int even(num)
+{
+    if(num%2==0)
+    printf("%d is even number",num);
+    else
+    {
+    printf("%d is not an odd number",num);
+    }
+}
+INPUT:
+enter the number::6
+OUTPUT:
+6 is even number
