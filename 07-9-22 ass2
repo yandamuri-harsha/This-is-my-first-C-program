@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+int main() {
+   int num, i, *ptr, s=0;
+   printf("Enter total number of elements:");
+   scanf("%d", &num);
+   ptr= (int*) malloc (num*sizeof(int));
+   printf("enter elements:\n");
+   for(i=0;i<num;i++)
+   {
+       scanf("%d",ptr+i);
+       s+= *(ptr+i);
+   }
+   printf("s=%d",s);
+   free(ptr);
+
+    return 0;
+}
+INPUT:Enter total number of elements:3
+enter elements:
+1
+4
+6
+OUTPUT:
+s=11
